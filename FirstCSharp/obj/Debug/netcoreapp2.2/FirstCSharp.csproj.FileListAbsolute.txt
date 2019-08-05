@@ -9,3 +9,14 @@ D:\coding_dojo\c_stack\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.AssemblyI
 D:\coding_dojo\c_stack\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.AssemblyInfo.cs
 D:\coding_dojo\c_stack\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.dll
 D:\coding_dojo\c_stack\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.pdb
+C:\Users\heidi\Desktop\c#\FirstCSharp\bin\Debug\netcoreapp2.2\FirstCSharp.deps.json
+C:\Users\heidi\Desktop\c#\FirstCSharp\bin\Debug\netcoreapp2.2\FirstCSharp.runtimeconfig.json
+C:\Users\heidi\Desktop\c#\FirstCSharp\bin\Debug\netcoreapp2.2\FirstCSharp.runtimeconfig.dev.json
+C:\Users\heidi\Desktop\c#\FirstCSharp\bin\Debug\netcoreapp2.2\FirstCSharp.dll
+C:\Users\heidi\Desktop\c#\FirstCSharp\bin\Debug\netcoreapp2.2\FirstCSharp.pdb
+C:\Users\heidi\Desktop\c#\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.csprojAssemblyReference.cache
+C:\Users\heidi\Desktop\c#\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\heidi\Desktop\c#\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\heidi\Desktop\c#\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.AssemblyInfo.cs
+C:\Users\heidi\Desktop\c#\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.dll
+C:\Users\heidi\Desktop\c#\FirstCSharp\obj\Debug\netcoreapp2.2\FirstCSharp.pdb
