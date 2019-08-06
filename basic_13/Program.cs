@@ -12,6 +12,7 @@ namespace basic_13
             int[] maxArray = { 1,3,5,9,2 };
             int[] avgArray = { 1,2,3,4,5 };
             int[] newArray = { 10,10,10,10,10 };
+            int[] negArray = { -3,5,10,2,-7 };
             // PrintNumbers();
             // PrintOdds();
             // PrintSum();
@@ -21,10 +22,69 @@ namespace basic_13
             // OddArray();
             // System.Console.WriteLine(GreaterThanY(numArray, 6));
             // SquareArrayValues(numArray);
+            // EliminateNeg(negArray);
+            // MinMaxAvg(numArray);
+            // ShiftVal(numArray);
+            
+            foreach(var item in NumToStr(negArray)) {
+                System.Console.WriteLine(item);
+            }
             
         }
 
+
+        // Number to String
+        public static object[] NumToStr(int[] numbers) {
+            object[] newNumber = new object[numbers.Length];
+            for(int i = 0; i < numbers.Length; i++) {
+                if (numbers[i] < 0) {
+                    newNumber[i] = "Dojo";
+                }
+                else {
+                    newNumber[i] = numbers[i];
+                }
+                // System.Console.WriteLine(newNumber[i]);
+            } 
+            return newNumber;
+        }
+
+        // Shifting the values in an array
+        public static void ShiftVal(int[] numbers) {
+            
+            for (int i = 1; i < numbers.Length; i++) {
+                System.Console.WriteLine(numbers[i]);  
+            }
+            // System.Console.WriteLine(temp);
+        }
+
+        // Min, Max, and Average
+        public static void MinMaxAvg(int[] numbers) {
+            int min = numbers[0];
+            int max = numbers[0];
+            int sum = 0;
+            for(int x = 1; x < numbers.Length; x++) {
+                if (numbers[0] < numbers[x]) {
+                    max = numbers[x];
+                }
+                if (numbers[0] > numbers[x]) {
+                    min = numbers[x];
+                }
+                sum += numbers[x];
+            }
+            double avg = sum / numbers.Length;          
+            System.Console.WriteLine($"{max} {min} {avg}");
+        }
         
+        // Eliminate Negative Numbers
+        public static void EliminateNeg(int[] numbers)
+        {
+            for(int i = 0; i < numbers.Length; i++) {
+                if (numbers[i] < 0) {
+                    numbers[i] = 0;
+                }
+                System.Console.WriteLine(numbers[i]);
+            }
+        }
 
         // Square the Values
         public static void SquareArrayValues(int [] numbers)
