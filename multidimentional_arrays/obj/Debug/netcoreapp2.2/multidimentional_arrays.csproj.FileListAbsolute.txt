@@ -1,0 +1,11 @@
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\bin\Debug\netcoreapp2.2\multidimentional_arrays.deps.json
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\bin\Debug\netcoreapp2.2\multidimentional_arrays.runtimeconfig.json
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\bin\Debug\netcoreapp2.2\multidimentional_arrays.runtimeconfig.dev.json
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\bin\Debug\netcoreapp2.2\multidimentional_arrays.dll
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\bin\Debug\netcoreapp2.2\multidimentional_arrays.pdb
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\obj\Debug\netcoreapp2.2\multidimentional_arrays.csprojAssemblyReference.cache
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\obj\Debug\netcoreapp2.2\multidimentional_arrays.csproj.CoreCompileInputs.cache
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\obj\Debug\netcoreapp2.2\multidimentional_arrays.AssemblyInfoInputs.cache
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\obj\Debug\netcoreapp2.2\multidimentional_arrays.AssemblyInfo.cs
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\obj\Debug\netcoreapp2.2\multidimentional_arrays.dll
+C:\Users\heidi\Desktop\c#\multidimentional_arrays\obj\Debug\netcoreapp2.2\multidimentional_arrays.pdb
