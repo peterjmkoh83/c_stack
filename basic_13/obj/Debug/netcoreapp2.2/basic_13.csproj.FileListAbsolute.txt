@@ -1,0 +1,11 @@
+C:\Users\heidi\Desktop\c#\basic_13\bin\Debug\netcoreapp2.2\basic_13.deps.json
+C:\Users\heidi\Desktop\c#\basic_13\bin\Debug\netcoreapp2.2\basic_13.runtimeconfig.json
+C:\Users\heidi\Desktop\c#\basic_13\bin\Debug\netcoreapp2.2\basic_13.runtimeconfig.dev.json
+C:\Users\heidi\Desktop\c#\basic_13\bin\Debug\netcoreapp2.2\basic_13.dll
+C:\Users\heidi\Desktop\c#\basic_13\bin\Debug\netcoreapp2.2\basic_13.pdb
+C:\Users\heidi\Desktop\c#\basic_13\obj\Debug\netcoreapp2.2\basic_13.csprojAssemblyReference.cache
+C:\Users\heidi\Desktop\c#\basic_13\obj\Debug\netcoreapp2.2\basic_13.csproj.CoreCompileInputs.cache
+C:\Users\heidi\Desktop\c#\basic_13\obj\Debug\netcoreapp2.2\basic_13.AssemblyInfoInputs.cache
+C:\Users\heidi\Desktop\c#\basic_13\obj\Debug\netcoreapp2.2\basic_13.AssemblyInfo.cs
+C:\Users\heidi\Desktop\c#\basic_13\obj\Debug\netcoreapp2.2\basic_13.dll
+C:\Users\heidi\Desktop\c#\basic_13\obj\Debug\netcoreapp2.2\basic_13.pdb

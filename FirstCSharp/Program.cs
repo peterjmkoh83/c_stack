@@ -8,6 +8,44 @@ namespace FirstCSharp
     {
         static void Main(string[] args)
         {
+            int[] newArr = { 1,2,3 };
+            Console.WriteLine("Sigma is: " + sigma(5));
+            Console.WriteLine("Average is: " + average(newArr));
+        }
+
+        public static int sigma(int num) {
+            int sigma = 0;
+            for (int i = 0; i <= num; i++) {
+                sigma += i;
+            }
+            return sigma;
+        }   
+
+        public static double average(int[] arr) {
+            double avg = 0;
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++) {
+                sum += arr[i];
+            }
+            avg = sum / arr.Length;
+            return avg;
+        }    
+          
+                
+
+            
+            
+            
+            // sum = sigma(5);
+            // Console.WriteLine(sum);
+            
+            // int[] array = new int[9];
+            // string[] names = new string[] {"Tim", "Martin", "Nikki", "Sara"};
+            
+
+
+            
+            
             // string place = "Coding Dojo";
             // string message = $"Hello {place}";
             // Console.WriteLine(message);
@@ -117,17 +155,17 @@ namespace FirstCSharp
             // Console.WriteLine("-" + manu);
             // }
             
-            Dictionary<string,string> profile = new Dictionary<string,string>();
-            //Almost all the methods that exists with Lists are the same with Dictionaries
-            profile.Add("Name", "Speros");
-            profile.Add("Language", "PHP");
-            profile.Add("Location", "Greece");
-            Console.WriteLine("Instructor Profile");
-            Console.WriteLine("Name - " + profile["Name"]);
-            Console.WriteLine("From - " + profile["Location"]);
-            Console.WriteLine("Favorite Language - " + profile["Language"]);
+            // Dictionary<string,string> profile = new Dictionary<string,string>();
+            // //Almost all the methods that exists with Lists are the same with Dictionaries
+            // profile.Add("Name", "Speros");
+            // profile.Add("Language", "PHP");
+            // profile.Add("Location", "Greece");
+            // Console.WriteLine("Instructor Profile");
+            // Console.WriteLine("Name - " + profile["Name"]);
+            // Console.WriteLine("From - " + profile["Location"]);
+            // Console.WriteLine("Favorite Language - " + profile["Language"]);
 
 
-        }
+        // }
     }
 }

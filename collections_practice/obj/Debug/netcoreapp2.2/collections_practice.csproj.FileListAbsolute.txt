@@ -1,0 +1,11 @@
+C:\Users\heidi\Desktop\c#\collections_practice\bin\Debug\netcoreapp2.2\collections_practice.deps.json
+C:\Users\heidi\Desktop\c#\collections_practice\bin\Debug\netcoreapp2.2\collections_practice.runtimeconfig.json
+C:\Users\heidi\Desktop\c#\collections_practice\bin\Debug\netcoreapp2.2\collections_practice.runtimeconfig.dev.json
+C:\Users\heidi\Desktop\c#\collections_practice\bin\Debug\netcoreapp2.2\collections_practice.dll
+C:\Users\heidi\Desktop\c#\collections_practice\bin\Debug\netcoreapp2.2\collections_practice.pdb
+C:\Users\heidi\Desktop\c#\collections_practice\obj\Debug\netcoreapp2.2\collections_practice.csprojAssemblyReference.cache
+C:\Users\heidi\Desktop\c#\collections_practice\obj\Debug\netcoreapp2.2\collections_practice.csproj.CoreCompileInputs.cache
+C:\Users\heidi\Desktop\c#\collections_practice\obj\Debug\netcoreapp2.2\collections_practice.AssemblyInfoInputs.cache
+C:\Users\heidi\Desktop\c#\collections_practice\obj\Debug\netcoreapp2.2\collections_practice.AssemblyInfo.cs
+C:\Users\heidi\Desktop\c#\collections_practice\obj\Debug\netcoreapp2.2\collections_practice.dll
+C:\Users\heidi\Desktop\c#\collections_practice\obj\Debug\netcoreapp2.2\collections_practice.pdb
