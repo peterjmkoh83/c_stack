@@ -1,0 +1,11 @@
+C:\Users\heidi\Desktop\c#\human\bin\Debug\netcoreapp2.2\human.deps.json
+C:\Users\heidi\Desktop\c#\human\bin\Debug\netcoreapp2.2\human.runtimeconfig.json
+C:\Users\heidi\Desktop\c#\human\bin\Debug\netcoreapp2.2\human.runtimeconfig.dev.json
+C:\Users\heidi\Desktop\c#\human\bin\Debug\netcoreapp2.2\human.dll
+C:\Users\heidi\Desktop\c#\human\bin\Debug\netcoreapp2.2\human.pdb
+C:\Users\heidi\Desktop\c#\human\obj\Debug\netcoreapp2.2\human.csprojAssemblyReference.cache
+C:\Users\heidi\Desktop\c#\human\obj\Debug\netcoreapp2.2\human.csproj.CoreCompileInputs.cache
+C:\Users\heidi\Desktop\c#\human\obj\Debug\netcoreapp2.2\human.AssemblyInfoInputs.cache
+C:\Users\heidi\Desktop\c#\human\obj\Debug\netcoreapp2.2\human.AssemblyInfo.cs
+C:\Users\heidi\Desktop\c#\human\obj\Debug\netcoreapp2.2\human.dll
+C:\Users\heidi\Desktop\c#\human\obj\Debug\netcoreapp2.2\human.pdb
