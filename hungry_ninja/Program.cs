@@ -60,24 +60,38 @@ namespace hungry_ninja
         // Constructor
         public Ninja()
         {
-            calorieIntake = 0;
-            FoodHistory = new List<Food>(){};
+            this.calorieIntake = 0;
+            this.FoodHistory = new List<Food>();
         }
         
-        // add a public "getter" property called "IsFull"
-        public int calorieintake
+        public bool isFull
         {
             get 
             {
-                if caloriesintake > 1200 
+                if (this.calorieIntake > 1200)
                 {
-                    
+                    return true;
                 }
+                return false;
+                
+                
             }
         }
 
+        public void Eat(Food item) 
+        {
+            if (isFull == false)
+            {
+                this.calorieIntake += item.Calories;
+                FoodHistory.Add(item);
+                
 
-
+            }
+            else 
+            {
+                System.Console.WriteLine("Full and cannot take food anymore");
+            }
+        }
     }
 
     
@@ -88,7 +102,15 @@ namespace hungry_ninja
         static void Main(string[] args)
         {
             Buffet myBuffet = new Buffet();
-            myBuffet.Serve();  
+            // myBuffet.Serve();  
+            Ninja ninja1 = new Ninja();
+            // ninja1.Eat();
+            while (!ninja1.isFull)
+            {
+                ninja1.Eat(myBuffet.Serve());
+                System.Console.WriteLine(myBuffet.Serve());
+            }
+           
         }
     }
 }
