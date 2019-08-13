@@ -27,10 +27,11 @@ namespace portfolio_ii
             }
 
             app.UseMvc();
+            app.UseStaticFiles();
         }
-        // public Startup(IHostingEnvironment env)
-        // {
+        public Startup(IHostingEnvironment env)
+        {
 
-        // }
+        }
     }
 }

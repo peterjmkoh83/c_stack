@@ -5,26 +5,25 @@ namespace portfolio_ii.Controllers
 {
    public class HomeController : Controller
    {
-      [Route("")]
-      [HttpGet]
+      [HttpGet("")]
       public ViewResult Index()
       {
          return View();
       }
 
-      [HttpGet("hello")]
-      public RedirectToActionResult hello()
+      [HttpGet("projects")]
+      public IActionResult Projects()
       {
-         Console.WriteLine("Redirecting to HOme");
-         var param = new{User="peter"};
-         return RedirectToAction("HelloUser", param);
+         return View();
       }
       
-      [HttpGet("{user}")]
-      public string HelloUser(string user)
+      [HttpGet("contact")]
+      public IActionResult Contact()
       {
-         return $"Hello {user}";
+         return View();
       }
+
+
 
    }
 }

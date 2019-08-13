@@ -3,10 +3,48 @@
 }
 
 .nav {
-    
     margin: auto;
 }
 
 .title {
     text-align: center;
+}
+
+.body {
+    border: 1px solid black;
+    margin: auto;
+    min-height: 500px;
+    text-align: center;
+}
+
+.left_body {
+    margin-top: 20px;
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    height: 450px;
+}
+
+.right_body {
+    margin-top: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 450px;
+    vertical-align: top;
+}
+
+.profile_pic {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.name {
+    margin: auto;
+    
+}
+
+.comment {
+    margin: auto;
+    
 }

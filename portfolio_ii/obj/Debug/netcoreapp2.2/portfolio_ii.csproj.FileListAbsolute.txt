@@ -21,3 +21,5 @@ C:\Users\heidi\Desktop\c#\portfolio_ii\obj\Debug\netcoreapp2.2\Razor\Views\Home\
 C:\Users\heidi\Desktop\c#\portfolio_ii\obj\Debug\netcoreapp2.2\portfolio_ii.RazorTargetAssemblyInfo.cs
 C:\Users\heidi\Desktop\c#\portfolio_ii\obj\Debug\netcoreapp2.2\portfolio_ii.Views.pdb
 C:\Users\heidi\Desktop\c#\portfolio_ii\obj\Debug\netcoreapp2.2\portfolio_ii.csproj.CopyComplete
+C:\Users\heidi\Desktop\c#\portfolio_ii\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\heidi\Desktop\c#\portfolio_ii\obj\Debug\netcoreapp2.2\Razor\Views\Home\Projects.g.cshtml.cs
