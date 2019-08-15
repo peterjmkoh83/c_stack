@@ -1,3 +1,6 @@
+@using dojo_survey.Models
+@model Survey
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,19 +16,19 @@
       <div class="info">
          <div class="row">
             <div class="col-sm-4">Name:</div>
-            <div class="col-sm-4">@ViewBag.name</div>
+            <div class="col-sm-4">@Model.name</div>
          </div>
          <div class="row">
             <div class="col-sm-4">Dojo Location:</div>
-            <div class="col-sm-4">@ViewBag.location</div>
+            <div class="col-sm-4">@Model.location</div>
          </div>
          <div class="row">
             <div class="col-sm-4">Favorite Language:</div>
-            <div class="col-sm-4">@ViewBag.language</div>
+            <div class="col-sm-4">@Model.language</div>
          </div>
          <div class="row">
             <div class="col-sm-4">Comment:</div>
-            <div class="col-sm-4">@ViewBag.comment</div>
+            <div class="col-sm-4">@Model.comment</div>
          </div>
       </div>
       <br>
