@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Survey
+<div class="container">
+    <h1 class="text-center">Dojo Survey</h1>
+    <form asp-action="Survey" asp-controller="Survey" method="post">
+        <div class="form-group">
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name">Your Name:</label>
+        <input type="text" class="form-control" asp-for="Name">
+        </div>
+        <div class="form-group">
+        <span asp-validation-for="Location"></span>
+        <label asp-for="Location">Dojo Location:</label>
+        <select class="form-control" asp-for="Location">
+            <option value="San Jose">San Jose</option>
+            <option value="Buena Park">Buena Park</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Costa Mesa">Costa Mesa</option>
+            <option value="Beverly Hills">Beverly Hills</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <span asp-validation-for="Language"></span>
+        <label asp-for="Language">Favorite Language:</label>
+        <select class="form-control" asp-for="Language">
+            <option value="Python">Python</option>
+            <option value="Mean">Mean</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <span asp-validation-for="Comment"></span>
+        <label asp-for="Comment">Comment (optional):</label>
+        <textarea class="form-control" col ="30" rows="10" asp-for="Comment"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>

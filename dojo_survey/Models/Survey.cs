@@ -1,11 +1,21 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace dojo_survey.Models
 {
    public class Survey
    {
-      public string name {get;set;}
-      public string location {get;set;}
-      public string language {get;set;}
-      public string comment {get;set;}
+      [Required]
+      [MinLength(2)]
+      public string Name {get;set;}
+
+      [Required]
+      public string Location {get;set;}
+
+      [Required]
+      public string Language {get;set;}
+
+      [MaxLength(20)]
+      public string Comment {get;set;}
 
       public Survey(){}
    }
