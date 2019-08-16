@@ -1,0 +1,47 @@
+@{
+   Product productObject = new Product() 
+   {
+      ProductName = "Boombox",
+      Price = 120.00,
+   }; 
+}
+@model Product
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <!-- <h1>Hi</h1>
+   <partial name="NavPartial" view-data="ViewData"/>
+   <h1>Welcome to this site!</h1>
+   <p>The rest of your View content here...</p>
+   <hr>
+   <partial name="ProductPartial" model="productObject"/> -->
+   <h1>Add a Product</h1>
+   <form asp-action="AddProduct" asp-controller="Home" method="post">
+      <div>
+         <div>
+            <span asp-validation-for="ProductName"></span>
+         </div>
+         <label asp-for="ProductName"></label>
+         <input type="text" asp-for="ProductName">
+      </div>
+      <div>
+         <div>
+            <span asp-validation-for="Price"></span>
+         </div>
+         
+         <label asp-for="Price"></label>
+         <input type="number" asp-for="Price">
+      </div>
+      <input type="submit" value="Add Product" class="btn btn-primary">
+
+      
+   </form>
+
+</body>
+</html>
