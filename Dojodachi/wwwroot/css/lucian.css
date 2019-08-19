@@ -1,5 +1,14 @@
-.lucian 
-{
+.lucian {
    width: 600px;
    height: 400px;
+}
+.nav-item {
+   margin-right: 20px;
+}
+.stats {
+   text-align: center;
+}
+.display {
+   border: 1px solid black;
+   width: 602px;
 }
