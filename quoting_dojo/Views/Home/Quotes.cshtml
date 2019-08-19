@@ -1,0 +1,9 @@
+<h1>Here are the awesome quotes!</h1>
+
+@foreach(var quote in ViewBag.Quotes){
+    <div>
+        <p>"@quote["Quote"]"</p>
+        <cite>-@quote["Name"] at @quote["created_at"]</cite>
+    </div>
+    <hr>
+}
