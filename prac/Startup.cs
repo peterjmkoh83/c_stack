@@ -20,13 +20,17 @@ namespace prac
             Configuration = configuration;
         }
 
+        // This public getter will be how you access the data from appsettings.json
+        // To access the connection string itself, you would use the following:
+        // Configuration ["DBInfo:ConnectionString"]
         public IConfiguration Configuration { get; }
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string mySqlConnection = "server=localhost;userid=root;password=root;port=3306;database=mydb;SslMode=None";
-            services.AddDbContext<MyContext>(options => options.UseMySql(mySqlConnection));
+            services.AddDbContext<MyContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
+           
             
             services.Configure<CookiePolicyOptions>(options =>
             {

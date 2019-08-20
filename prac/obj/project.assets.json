@@ -12149,23 +12149,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jmkoh\\.nuget\\packages\\": {},
+    "C:\\Users\\heidi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\coding_dojo\\c_stack\\prac\\prac.csproj",
+      "projectUniqueName": "C:\\Users\\heidi\\Desktop\\c#\\prac\\prac.csproj",
       "projectName": "prac",
-      "projectPath": "D:\\coding_dojo\\c_stack\\prac\\prac.csproj",
-      "packagesPath": "C:\\Users\\jmkoh\\.nuget\\packages\\",
-      "outputPath": "D:\\coding_dojo\\c_stack\\prac\\obj\\",
+      "projectPath": "C:\\Users\\heidi\\Desktop\\c#\\prac\\prac.csproj",
+      "packagesPath": "C:\\Users\\heidi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\heidi\\Desktop\\c#\\prac\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jmkoh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\heidi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

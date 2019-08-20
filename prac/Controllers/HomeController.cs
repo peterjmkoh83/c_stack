@@ -5,13 +5,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using prac.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace prac.Controllers
 {
     public class HomeController : Controller
     {
+        private MyContext dbContext;
+
+        public HomeController(MyContext context)
+        {
+            dbContext = context;
+        }
+        
+        [HttpGet("")]
         public IActionResult Index()
         {
+            List<User> AllUsers = dbContext.Users.ToList();
             return View();
         }
 
