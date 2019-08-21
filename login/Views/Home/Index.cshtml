@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "A Web Page";
+}
+
+@model User
+<div class="container">
+    <h1>Register to this Cool Site!</h1>
+    <p style="text-align-last:right"><a href="/login"><u>Login</u></a></p>
+    <hr>
+    
+    <form asp-action="Register" asp-controller="Home" method="post">
+        <div class="form-group">
+            <p><span asp-validation-for="FirstName" class="text-danger"></span><p>
+            <label for="FirstName">First Name</label>
+            <input type="text" class="form-control col-4" asp-for="FirstName">
+        </div>
+        <div class="form-group">
+            <p><span asp-validation-for="LastName" class="text-danger"></span><p>
+            <label for="LastName">Last Name</label>
+            <input type="text" class="form-control col-4" asp-for="LastName">
+        </div>
+        <div class="form-group">
+            <p><span asp-validation-for="Email" class="text-danger"></span><p>
+            <label for="Email">Email</label>
+            <input type="email" class="form-control col-4" asp-for="Email">
+        </div>
+        <div class="form-group">
+            <p><span asp-validation-for="Password" class="text-danger"></span><p>
+            <label for="Password">Password</label>
+            <input type="password" class="form-control col-4" asp-for="Password">
+        </div>
+        <div class="form-group">
+            <p><span asp-validation-for="Confirm" class="text-danger"></span><p>
+            <label for="Confirm">Confirm Password</label>
+            <input type="password" class="form-control col-4" asp-for="Confirm">
+        </div>
+        <button type="submit" class="btn btn-info">Sign up Now</button>
+    </form>
+
+</div>
+
+

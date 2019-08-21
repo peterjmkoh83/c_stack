@@ -1,0 +1,5 @@
+1. dotnet new mvc --no-https
+2. dotnet add package Pomelo.EntityFrameworkCore.MySql -v 2.2.0
+3. After setting up Startup.cs, apsettings.json, Model.cs, MyContext.cs:
+	dotnet ef migrations add FirstMigration
+4. dotnet ef database update
