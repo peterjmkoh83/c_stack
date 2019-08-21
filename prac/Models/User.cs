@@ -11,7 +11,7 @@ namespace prac.Models
       public string LastName {get;set;}
       public string Email {get;set;}
       public string Password {get;set;}
-      public DateTime created_at {get;set;}
-      public DateTime updated_at {get;set;}
+      public DateTime created_at {get;set;} = DateTime.Now;
+      public DateTime updated_at {get;set;} = DateTime.Now;
    }
 }

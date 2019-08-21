@@ -23,6 +23,44 @@ namespace prac.Controllers
         public IActionResult Index()
         {
             List<User> AllUsers = dbContext.Users.ToList();
+            
+            // Get Users with the LastName "Jefferson"
+            List<User> Jeffersons = dbContext.Users.Where(u => u.LastName == "Jefferson").ToList();
+
+            // Get the 5 most recently added Users
+            List<User> MostRecent = dbContext.Users
+                .OrderByDescending(u => u.created_at)
+                .Take(5)
+                .ToList();
+          
+            return View();
+        }
+
+        [HttpPost("create")]
+        public IActionResult CreateUser(User newUser)
+        {
+            dbContext.Add(newUser);
+            dbContext.SaveChanges();
+            return View();
+        }
+
+        [HttpGet("update/{userId}")]
+        public IActionResult UpdateUser(int userId)
+        {
+            User RetrievedUser = dbContext.Users.FirstOrDefault(u => u.UserId == userId);
+            RetrievedUser.FirstName = "New name";
+            RetrievedUser.updated_at = DateTime.Now;
+
+            dbContext.SaveChanges();
+            return View();
+        }
+
+        [HttpGet("delete/{userId}")]
+        public IActionResult DeleteUser(int userid)
+        {
+            User RetrievedUser = dbContext.Users.SingleOrDefault(u => u.UserId == userid);
+            dbContext.Users.Remove(RetrievedUser);
+            dbContext.SaveChanges();
             return View();
         }
 

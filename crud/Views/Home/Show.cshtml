@@ -1,0 +1,15 @@
+@model Dish
+
+<div class="container">
+   <a href="/">Home</a>
+   <h1 style="text-align:center">@ViewBag.OneDish.Name</h1>
+   <h5 style="text-align:center">@ViewBag.OneDish.Chef</h5>
+   <hr>
+   <p>@ViewBag.OneDish.Description</p>
+   <p>Calories: @ViewBag.OneDish.Calories</p>
+   <p>Tastiness: @ViewBag.OneDish.Tastiness</p>
+   <button class="btn btn-danger"><a href="/delete/@ViewBag.OneDish.DishId">Delete</button>
+   <button class="btn btn-warning"><a href="/edit/@ViewBag.OneDish.DishId">Edit</a></button>
+</div>
+
+   
