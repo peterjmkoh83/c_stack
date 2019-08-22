@@ -1,0 +1,82 @@
+1. Create Project Folder
+2. Inside project directory,
+	-> dotnet new mvc --no-https
+3. Inside project directory,
+	-> dotnet add package MySql.Data -v 8.0.16
+	-> dotnet add package Pomelo.EntityFrameworkCore.MySql -v 2.2.0
+
+
+
+
+<LINQ documentations>
+1. Sorting 
+	IEnumerable<Product> orderedProducts = myProducts.OrderByDescending(prod => prod.Price);
+2. Filtering
+	IEnumerable<Product> justClothings = myProducts.Where(prod => prod.Category == "Clothing");
+3. FirstOrDefault - Retrieve a FIRST single item from a collection
+	Product justJeans = myProducts.FirstOrDefault(prod => prod.Name == "Jeans");
+	Product firstOne = myProducts.FirstOrDefault();
+4. Select
+	IEnumerable<string> justCategories = myProducts.Select(prod => prod.Category);
+5. Min/Max/Sum	
+	int[] numbers = new int[]{12,4,5,2,5,-1};
+   	int smallestNum = numbers.Min();
+   	int largestNum = numbers.Max();
+   	int sumOfNums = numbers.Sum();
+	double sumOfProductPrice = myProducts.Sum(prod => prod.Price);
+6. ToList/ToArray
+	List<Product> highTicketItemList = myProducts.Where(p => p.Price > 100).ToList();
+   	Product[] orderedProductArray = myProducts
+       		.Where(p => p.Category == "Clothing")
+        	.OrderBy(p => p.Price)
+        	.ToArray();
+7. Join
+	List<string> Food = new List<string> 
+	{
+   		"apple",
+    		"banana",
+    		"carrot",
+    		"fudge",
+    		"tomato"
+	};
+                           
+	List<string> Adjective = new List<string> 
+	{
+    		"tasty",
+    		"capital",
+    		"best",
+    		"typical",
+    		"flavorful",
+ 	   	"toothsome"
+	};
+ 
+IEnumerable<string> Alliterations = Food.Join(Adjective, 
+    foodItem => foodItem[0],
+    adjective => adjective[0],
+    (foodItem, adjective) =>
+    {
+         return adjective + " " + foodItem;
+    });
+ 
+Combo:  "best banana",
+        "capital carrot",
+        "flavorful fudge",
+        "tasty tomato",
+        "typical tomato",
+        "toothsome tomato"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

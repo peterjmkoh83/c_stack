@@ -12149,23 +12149,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\heidi\\.nuget\\packages\\": {},
+    "C:\\Users\\jmkoh\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\heidi\\Desktop\\c#\\login\\login.csproj",
+      "projectUniqueName": "d:\\coding_dojo\\c_stack\\login\\login.csproj",
       "projectName": "login",
-      "projectPath": "C:\\Users\\heidi\\Desktop\\c#\\login\\login.csproj",
-      "packagesPath": "C:\\Users\\heidi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\heidi\\Desktop\\c#\\login\\obj\\",
+      "projectPath": "d:\\coding_dojo\\c_stack\\login\\login.csproj",
+      "packagesPath": "C:\\Users\\jmkoh\\.nuget\\packages\\",
+      "outputPath": "d:\\coding_dojo\\c_stack\\login\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\heidi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jmkoh\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

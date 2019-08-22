@@ -67,8 +67,26 @@ namespace login.Controllers
             if (ModelState.IsValid)
             {
                 var userInDb = dbContext.Users.FirstOrDefault(u => u.Email == userSubmission.LoginEmail);
+                if(userInDb == null)
+                {
+                    ModelState.AddModelError("LoginEmail", "Invalid Email/Password");
+                    return View("Login");
+                } 
+                var hasher = new PasswordHasher<LoginUser>();
+                var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.LoginPassword);
+                if (result == 0)
+                {
+                    ModelState.AddModelError("LoginPassword", "Invalid Email/Password");
+                }   
+                else
+                {
+                    HttpContext.Session.GetInt32("id");
+                    HttpContext.Session.SetInt32("id", userInDb.UserId);
+                    return RedirectToAction("Success");
+                }
+            
             }
-            return RedirectToAction("Success");
+            return View("Login");
         }
 
         [HttpGet("success")]
