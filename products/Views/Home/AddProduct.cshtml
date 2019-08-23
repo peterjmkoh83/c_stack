@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Add Product";
+}
+@model Association
+<h1 class="text-center">@ViewBag.catName.CName</h1>
+<div class="row mt-5">
+    <div class="col-6">
+        <h2>Products:</h2>
+        <ul>
+        @{
+        foreach(var p in ViewBag.catName.ProAss)
+        {
+            <li><h3>@p.Product.Name</h3></li>
+        }
+        }
+        </ul>
+    </div>
+    <div class="col-6">
+        <h2>Add Product:</h2>
+        <form action="/addProduct/add/@ViewBag.catName.CategoryId" method="POST">
+            <select asp-for="ProductId" class="form-control">
+            @{
+                foreach(var p in ViewBag.pros)
+                {
+                <option asp-for="ProductId" value="@p.ProductId">@p.Name</option>
+                }
+            }
+            </select>
+            <button type="submit" class="btn btn-dark btn-lg mt-4">Add</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Products";
+}
+<div class="row">
+    <div class="col-5"><h1 class=" float-right">Products</h1></div>
+    <div style="border:2px solid black; height: 60px;"></div>
+    <div class="col-5">
+        <h1><a href="/categories">Categories</a></h1>
+    </div>
+</div>
+@model Product
+<div class="row mt-5">
+    <div class="col-5">
+        <h1 class="text-center">New Product</h1>
+        <form class="mt-5" asp-action="CreateProduct" asp-controller="Home" method="POST">
+            <div class="form-group row">
+                <label asp-for="Name" class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-9">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                    <input asp-for="Name" type="text" class="form-control" id="Name" placeholder="Product name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Description" class="col-sm-3 col-form-label">Description</label>
+                <div class="col-sm-9">
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                    <textarea asp-for="Description" type="text" class="form-control" id="Description" placeholder="Product description"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Price" class="col-sm-3 col-form-label">Price</label>
+                <div class="col-sm-9">
+                    <span class="text-danger" asp-validation-for="Price"></span>
+                    <input asp-for="Price" type="number" class="form-control" id="Price" placeholder="Product price">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9">
+                    <button type="submit" class="btn btn-dark btn-lg">Create</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="border:2px solid black; height: 500px; margin-top:30px"></div>
+    <div class="col-5">
+        <h1 class="text-center">Existing Products</h1>
+        <div class="ml-5 mt-5">
+            @{
+                foreach(var product in ViewBag.pros)
+                {
+                    <h3><a href="/product/@product.ProductId">@product.Name</a></h3>   
+                }
+            }
+        </div>
+    </div>
+</div>
