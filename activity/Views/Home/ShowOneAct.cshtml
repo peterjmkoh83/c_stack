@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Activity";
+}
+
+@model Activity
+<div class="container">
+    <div>
+        <h1>Dojo Activity Center</h1>
+        <p><a href="/home"><u>Home</u></a></p>
+        <p><a href="/signin"><u>Logout</u></a></p>
+    </div>
+    <hr>
+    <div class="mt-5">
+        <h3>@ViewBag.act.Title</h3>
+        <h3>Event Coordinator: </h3>
+        <h3>Description:</h3>
+        <p class="ml-5">@ViewBag.act.Description</p>
+        <h3 class="mt-5">Participants:</h3>
+
+
+    </div>
+</div>

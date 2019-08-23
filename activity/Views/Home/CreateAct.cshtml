@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "New Activity";
+}
+
+@model Activity
+<div class="container">
+    <div>
+        <h1>Dojo Activity Center</h1>
+        <p><a href="/home"><u>Home</u></a></p>
+        <p><a href="/signin"><u>Logout</u></a></p>
+    </div>
+    <hr>
+    <div class="mt-5">
+       <h3>Create an Activity</h3>
+        <div class="col-5">
+            <form asp-action="NewAct" asp-controller="Home" method="post">
+                <div class="form-group">
+                    <p><span asp-validation-for="Title" class="text-danger"></span><p>
+                    <label for="Title">Title</label>
+                    <input type="text" class="form-control col-8" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    
+                    <label for="Date">Date</label>
+                    <input type="Date" class="form-control col-8">
+                    </div>
+                <div class="form-group">
+                    <p><span asp-validation-for="Description" class="text-danger"></span><p>
+                    <label for="Description">Description</label>
+                    <textarea asp-for="Description" class="form-control col-12" cols="30" rows="10"></textarea>
+                    
+                </div>
+                <button type="submit" class="btn btn-info">Create Activity</button>
+            </form>      
+        </div>        
+    </div>
+</div>
+

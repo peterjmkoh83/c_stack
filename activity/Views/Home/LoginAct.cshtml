@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Login/Registration";
+}
+
+
+@model User
+<div class="container">
+   <h1>Welcome to the Dojo Activity Center</h1>
+   <div class="row mt-5">
+      
+      <div class="col-5">
+         <h5>Register</h1>
+         <form asp-action="Register" asp-controller="Home" method="post">
+            <div class="form-group">
+               <p><span asp-validation-for="Name" class="text-danger"></span><p>
+               <label for="Name">Name</label>
+               <input type="text" class="form-control col-6" asp-for="Name">
+            </div>
+            <div class="form-group">
+               <p><span asp-validation-for="Email" class="text-danger"></span><p>
+               <label for="Email">Email</label>
+               <input type="email" class="form-control col-6" asp-for="Email">
+            </div>
+            <div class="form-group">
+               <p><span asp-validation-for="Password" class="text-danger"></span><p>
+               <label for="Password">Password</label>
+               <input type="password" class="form-control col-6" asp-for="Password">
+            </div>
+            <div class="form-group">
+               <p><span asp-validation-for="Confirm" class="text-danger"></span><p>
+               <label for="Confirm">Confirm Password</label>
+               <input type="password" class="form-control col-6" asp-for="Confirm">
+            </div>
+            <button type="submit" class="btn btn-info">Register</button>
+         </form>      
+      </div>
+      
+      <div class="col-5">  
+         <partial name="LoginPartial"/>     
+      </div>
+
+</div>
