@@ -1,0 +1,35 @@
+@model User
+
+<div class="container">
+    <h1>Welcome, @ViewBag.acctholder.FirstName</h1>
+    <p>Current Balance: $ @ViewBag.x </p>
+    <a href="/login">Logout</a>
+    <hr>
+    
+    <div class="transaction">
+        <p>Deposit/Withdraw:</p>
+        
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>1/23/2019</td>
+                
+                </tr>
+            </tbody>
+        </table>
+            
+        <form action="" method="post">
+
+        </form>
+            
+            
+       
+    </div>
+</div>
