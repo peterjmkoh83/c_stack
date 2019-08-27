@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Wedding Planner";
+}
+
+@model List<Wedding>
+<a class="float-right" href="/logout">Log Out</a>
+<h1>Welcome to the Wedding Planner</h1>
+<table class="table table-bordered mt-5">
+   <thead>
+      <tr>
+         <th scope="col">Wedding</th>
+         <th scope="col">Date</th>
+         <th scope="col">Guest</th>
+         <th scope="col">Action</th>
+      </tr>
+   </thead>
+   <tbody>
+   @{
+      @foreach(var wed in Model)
+      {
+         <tr>
+            <td><a href="/display/@wed.WeddingId">@wed.WedderOne & @wed.WedderTwo</td>
+            <td>@Convert.ToDateTime(wed.Date).ToString("MMM dd yyyy")</td>
+            <td>@wed.guestList.Count</td>
+            <td>
+               @if(wed.UserId != ViewBag.sessionId)
+               {
+                  if(wed.guestList.Any(u => u.UserId == ViewBag.sessionId))
+                  {
+                     <a asp-action="Leave" asp-controller="Home" asp-route-id="@wed.WeddingId">Un-RSVP</a>
+                  }
+                  else
+                  {
+                     <a asp-action="Join" asp-controller="Home" asp-route-id="@wed.WeddingId">RSVP</a>
+                  }
+               }
+               else
+               {
+                  <a asp-action="Delete" asp-controller="Home" asp-route-id="@wed.WeddingId">Delete</a>
+               }
+            </td>
+         </tr>
+
+      }
+   }   
+   </tbody>
+
+</table>
+<div>
+   <a class="btn btn-info float-right mt-3" href="/newWedding">New Wedding</a>
+</div>
