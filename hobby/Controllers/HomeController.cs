@@ -176,7 +176,7 @@ namespace hobby.Controllers
             join.HobbyId = id;
             dbContext.Add(join);
             dbContext.SaveChanges();
-            return RedirectToAction("OneHobby");
+            return RedirectToAction("Hobby");
         }
 
         public IActionResult Privacy()
