@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Hobby Hub";
+}
+
+
+
+<h1 class="text-center mt-5">Hobbies</h1>
+<table class="table table-bordered mt-5">
+   <thead>
+      <tr>
+         <th scope="col">Name</th>
+         <th scope="col">Enthusiasts</th>
+      </tr>
+   </thead>
+   <tbody>
+      @foreach(var hob in ViewBag.hobList)
+      {
+         <tr>
+            <td><a href="/Hobby/@hob.HobbyId">@hob.Name</td>
+            <td>@hob.joinList.Count</td>
+         </tr>
+      }  
+   </tbody>
+</table>
+<div>
+   <a href="/Hobby/New"><u>Create a Hobby</u></a>
+</div>

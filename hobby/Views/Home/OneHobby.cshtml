@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Hobby Hub";
+}
+
+
+@model Hobby
+<h1 class="mt-5">@ViewBag.oneHobby.Name</h1>
+
+<div class="row">
+   <div class="col-3">
+      <h3>Description:</h3>
+   </div>
+   <div class="col-9">
+      <p>@ViewBag.oneHobby.Description</p>
+   </div>
+</div>
+
+<div class="row mt-5">
+   <div class="col-6">
+      <h3>Hiking Enthusiasts:</h3>
+      <div>
+         <ul style="list-style:none">
+            
+            @foreach(var j in Model.joinList)
+            {
+               <li>@j.User.FirstName</li>
+            }   
+         </ul>
+      </div>
+   </div>
+   
+   <div class="col-6">
+      <h3>Become an Enthusiasts!</h3>
+      <a asp-action="Join" asp-controller="Home" asp-route-id="@Model.HobbyId">RSVP</a>
+   </div>
+</div>
+
