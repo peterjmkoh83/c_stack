@@ -20,12 +20,27 @@ namespace chefs.Controllers
         }
         public IActionResult Index()
         {
+            // var chefs = dbContext.Chefs.FirstOrDefault(c => c.ChefId);
+            List<Chef> AllChefs = dbContext.Chefs.ToList();
+            ViewBag.chefs = AllChefs;
             return View();
         }
 
         [HttpGet("new")]
         public IActionResult AddChefPage()
         {
+            return View("AddChef");
+        }
+
+        [HttpPost("new/create")]
+        public IActionResult CreateChef(Chef newChef)
+        {
+            if(ModelState.IsValid)
+            {
+                dbContext.Add(newChef);
+                dbContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
             return View("AddChef");
         }
 

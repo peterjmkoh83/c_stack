@@ -2,11 +2,30 @@
     ViewData["Title"] = "Chef 'N Dishes'";
 }
 
+@model Chef
 <div class="container">
     <a class="float-right mt-4" href="/"><u>Home</u></a>
     <h1 class="text-center mt-5">Add a Chef!</h1>
     <hr>
-    <div>
-       
+    <div class="mt-5">
+        <form asp-action="CreateChef" method="post">
+            <div class="form-group col-3">
+                <p><span class="text-danger" asp-validation-for="FirstName"></span></p>
+                <label asp-for="FirstName">First Name</label>
+                <input asp-for="FirstName" type="text" class="form-control">
+            </div>
+            <div class="form-group col-3">
+                <p><span class="text-danger" asp-validation-for="LastName"></span></p>
+                <label asp-for="LastName">Last Name</label>
+                <input asp-for="LastName" type="text" class="form-control">
+            </div>
+            <div class="form-group col-3">
+                <p><span class="text-danger" asp-validation-for="DOB"></span></p>
+                <label asp-for="DOB">Date of Birth</label>
+                <input asp-for="DOB" type="date" class="form-control">
+            </div>
+            <button class="ml-3 mt-3" type="submit">Add Chef</button>
+        </form>
+            
     </div>
 </div>
