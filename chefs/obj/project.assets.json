@@ -12155,11 +12155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\coding_dojo\\c_stack\\chefs\\chefs.csproj",
+      "projectUniqueName": "d:\\coding_dojo\\c_stack\\chefs\\chefs.csproj",
       "projectName": "chefs",
-      "projectPath": "D:\\coding_dojo\\c_stack\\chefs\\chefs.csproj",
+      "projectPath": "d:\\coding_dojo\\c_stack\\chefs\\chefs.csproj",
       "packagesPath": "C:\\Users\\jmkoh\\.nuget\\packages\\",
-      "outputPath": "D:\\coding_dojo\\c_stack\\chefs\\obj\\",
+      "outputPath": "d:\\coding_dojo\\c_stack\\chefs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

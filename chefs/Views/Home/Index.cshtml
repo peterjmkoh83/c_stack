@@ -2,6 +2,7 @@
     ViewData["Title"] = "Chef 'N Dishes'";
 }
 
+
 <div class="container mt-5">
     <a class="float-right mt-4" href="/new"><u>Add a Chef</u></a>
     <div class="row">
@@ -20,11 +21,15 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                @foreach(var i in ViewBag.chefs)
+                {
+                    <tr>
+                        <td>@i.FirstName</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                }
             </tbody>
         </table>
     </div>
