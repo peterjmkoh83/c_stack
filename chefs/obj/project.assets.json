@@ -12155,19 +12155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "d:\\coding_dojo\\c_stack\\chefs\\chefs.csproj",
-      "projectName": "chefs",
-      "projectPath": "d:\\coding_dojo\\c_stack\\chefs\\chefs.csproj",
-      "packagesPath": "C:\\Users\\jmkoh\\.nuget\\packages\\",
-      "outputPath": "d:\\coding_dojo\\c_stack\\chefs\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\heidi\\Desktop\\c#\\chefs\\chefs.csproj",
       "projectName": "chefs",
       "projectPath": "C:\\Users\\heidi\\Desktop\\c#\\chefs\\chefs.csproj",
       "packagesPath": "C:\\Users\\heidi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\heidi\\Desktop\\c#\\chefs\\obj\\",
->>>>>>> b89e4320cea2a25912da2ad15b8cd32d7ca3a7e4
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12224,5 +12216,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\heidi\\Desktop\\c#\\chefs\\obj\\chefs.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
